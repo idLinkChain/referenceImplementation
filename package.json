@@ -1,0 +1,24 @@
+{
+  "name": "idlinkchain-reference-implementation",
+  "version": "0.0.1",
+  "description": "Example code for using the idLinkChain contract to verify user identities with their Ethereum-compatible wallets.",
+  "main": "clientImplementation.js",
+  "dependencies": {
+    "wagmi": "^2.10.9",
+    "@wagmi/core": "^2.11.7",
+    "siwe": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idLinkChain/referenceImplementation.git"
+  },
+  "author": "idLinkChain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idLinkChain/referenceImplementation/issues"
+  },
+  "homepage": "https://github.com/idLinkChain/referenceImplementation#readme"
+}
