@@ -1,5 +1,3 @@
-# idLinkChain referenceImplementation
-
 # idLinkChain Example Code
 
 This repository contains example code for using the `idLinkChain` contract to verify user identities with their Ethereum-compatible wallets. The provided code demonstrates how to interact with the `idLinkChain` contract, check if an address is a smart wallet, generate signatures for identity verification, and sign in with Ethereum.
