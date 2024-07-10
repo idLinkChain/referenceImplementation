@@ -5,6 +5,27 @@ const {address, chain} = useAccount();
 const {signMessageAsync} = useSignMessage();
 
 /*
+* Array of networks currently supported by the idLinkChain contract.  
+*/
+const networks = [
+  { networkAbbreviation: "x", networkName: "X (Twitter)" },
+  { networkAbbreviation: "dc", networkName: "Discord" },
+  { networkAbbreviation: "tg", networkName: "Telegram" },
+  { networkAbbreviation: "insta", networkName: "Instagram" },
+  { networkAbbreviation: "in", networkName: "LinkedIn" },
+  { networkAbbreviation: "git", networkName: "Github" },
+  { networkAbbreviation: "tw", networkName: "Twitch" },
+  { networkAbbreviation: "yt", networkName: "YouTube" },
+  { networkAbbreviation: "tt", networkName: "TikTok" },
+  { networkAbbreviation: "sm", networkName: "Signal" },
+  { networkAbbreviation: "web", networkName: "Website" },
+  { networkAbbreviation: "email", networkName: "Email" },
+  { networkAbbreviation: "ph", networkName: "Phone" },
+  { networkAbbreviation: "sol", networkName: "Solana" },
+  { networkAbbreviation: "btc", networkName: "Bitcoin" },
+];
+
+/*
 * Function to check if an address is a smart wallet.  Will not work for smart 
 * wallets that have not been deployed (have no transactions).  This should not
 * be an issue in the case of identity verification.
