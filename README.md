@@ -197,6 +197,7 @@ const helperContract = {
   [mainnet.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
   [scroll.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
   [bsc.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
+  [optimism.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d"
 };
 ```
 
@@ -216,6 +217,7 @@ const config = createConfig({
     [mainnet.id]: http(`https://zksync-mainnet.blastapi.io/${blastKey}`),
     [scroll.id]: http(`https://scroll-mainnet.blastapi.io/${blastKey}`),
     [bsc.id]: http(`https://bsc-mainnet.blastapi.io/${blastKey}`),
+    [optimism.id]: http(`https://optimism-mainnet.blastapi.io/${blastKey}`),
   },
 });
 ```

@@ -23,6 +23,7 @@ const networks = [
   { networkAbbreviation: "ph", networkName: "Phone" },
   { networkAbbreviation: "sol", networkName: "Solana" },
   { networkAbbreviation: "btc", networkName: "Bitcoin" },
+  { networkAbbreviation: "far", networkName: "Farcaster / Warpcast" },
 ];
 
 /*

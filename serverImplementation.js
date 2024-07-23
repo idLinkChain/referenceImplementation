@@ -1,5 +1,5 @@
 import {http, createConfig, readContract, getPublicClient} from "@wagmi/core";
-import {arbitrum, base, polygon, mainnet, scroll, bsc} from "@wagmi/core/chains";
+import {arbitrum, base, polygon, mainnet, scroll, bsc, optimism} from "@wagmi/core/chains";
 import {SiweMessage} from "siwe";
 import {readFileSync} from "fs";
 
@@ -11,6 +11,7 @@ const helperContract = {
   [mainnet.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
   [scroll.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
   [bsc.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
+  [optimism.id]: "0x01D01dEEa6C2620c4E93725937Ec088A1eAE2A6d",
   };
 
 let abi;
@@ -20,7 +21,7 @@ const blastKey = "";
 
 // Create config object with chains and transports
 const config = createConfig({
-  chains: [arbitrum, base, polygon, mainnet, scroll, bsc],
+  chains: [arbitrum, base, polygon, mainnet, scroll, bsc, optimism],
   transports: {
     [arbitrum.id]: http(`https://arbitrum-one.blastapi.io/${blastKey}`),
     [base.id]: http(`https://base-mainnet.blastapi.io/${blastKey}`),
@@ -28,6 +29,7 @@ const config = createConfig({
     [mainnet.id]: http(`https://zksync-mainnet.blastapi.io/${blastKey}`),
     [scroll.id]: http(`https://scroll-mainnet.blastapi.io/${blastKey}`),
     [bsc.id]: http(`https://bsc-mainnet.blastapi.io/${blastKey}`),
+    [optimism.id]: http(`https://optimism-mainnet.blastapi.io/${blastKey}`),
   },
 });
 
